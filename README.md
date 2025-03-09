@@ -1,57 +1,99 @@
-<header>
+# Librelinks
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Librelinks is an open-source link in bio tool for everyone.
 
-# GitHub Pages
+The goal of Librelinks is to provide users with a platform that helps them to connect to their audience through a single link.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+Official site: [https://librelinks.vercel.app](https://librelinks.vercel.app)
 
-</header>
+An example Librelinks page: [https://librelinks.vercel.app/maayez](https://librelinks.vercel.app/maayez)
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+## ⚒️ Demo
 
-## Finish
+Create and customize your link in bio in minutes✨
 
-_Congratulations friend, you've completed this course!_
+<div style="width: 600px;">
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
+![Librelinks Demo](.github/demo.gif)
 
-Your blog is now live and has been deployed!
+</div>
 
-Here's a recap of all the tasks you've accomplished in your repository:
+## ⭐ Features
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
+It has 4 Core Features:
+| <div style="width:285px">**Feature**</div> | **Description** |
+|---|---|
+| **1. Customize your page** | You can easily customize your page with beautiful themes and color palettes |
+| **2. Keep track of everything** | Get useful insights on your profile like the number of views, clicks, countries, devices etc.|
+| **3. Shareable links** | Share your profile everywhere with just one unique link tailor made for you |
+**4. Privacy centered** | All your links belong to you, we do not sell your data.
 
-### What's next?
+## 📚 Tech Stack
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+| <div style="width:140px">**Category**</div> | <div style="width:100px">**Choice**</div>                                         | **Descriptions**                                                                                                                                                                 |
+| ------------------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Language**                                | [JavaScript](https://github.com/microsoft/TypeScript)                             | JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive.                                                      |
+| **UI Library**                              | [React](https://github.com/facebook/react)                                        | React’s declarative syntax and component-based architecture make it simple to develop reactive reusable components.                                                              |
+| **CSS Framework**                           | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)                       | Tailwind speeds up development by providing helpful css utilities and removing the need to context switch between jsx and css files.                                             |
+| **Web Framework**                           | [NextJS 13](https://github.com/vercel/next.js)                                    | Next.js supports static site generation and helps build efficient React webpages that support SEO.                                                                               |
+| **Database**                                | [MongoDB & Prisma](https://www.mongodb.com/docs/manual/reference/program/mongod/) | MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. |
+| **Analytics**                               | [Tinybird](https://www.tinybird.co/)                                              | A realtime analytics platform for data and engineering teams.                                                                                                                    |
 
-<footer>
+## 📁 Project Structure
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+Librelinks is created with the NextJS web framework and follows its project structure.
 
----
+| <div style="width:115px">**Page Route**</div> | **Code Path**               | **Description**                                 |
+| --------------------------------------------- | --------------------------- | ----------------------------------------------- |
+| /                                             | /index.jsx                  | Home page/ landing page                         |
+| /components                                   | /components                 | Contains all the components used in the project |
+| /admin                                        | /admin/index.jsx/           | The user's playground                           |
+| /login and /register                          | /login.jsx or /register.jsx | The pages for authenticating the user           |
+| admin/[page]                                  | admin/[page]/index.jsx/     | Individual page for customizing your profile    |
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+## Environment variables 🔑
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+You need to have the following env variables in your `.env` file to make the application work properly
 
-</footer>
+`DATABASE_URL` = XXXXXXX
+
+`GOOGLE_CLIENT_ID` = XXXXXX
+
+`GOOGLE_CLIENT_SECRET` = XXXXXXXX
+
+`NODE_ENV` = development
+
+`NEXTAUTH_JWT_SECRET` = XXXXX
+
+`NEXTAUTH_SECRET` = XXXXX
+
+Checkout the `.env.example` file to learn how to get started.
+
+## 💻 Local Development
+
+1. Download the repo `git clone https://github.com/urdadx/librelinks.git`
+2. Change the directory `cd librelinks`
+3. Install the dependency `npm install`
+4. Start a development server `npm run dev`
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see Librelinks live
+
+## Contributing 🤝
+
+We love our contributors! Here's how you can contribute:
+
+- [Open an issue](https://github.com/urdadx/librelinks/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/urdadx/librelinks/pull) to add new features/make quality-of-life improvements/fix bugs.
+
+<a href="https://github.com/urdadx/librelinks/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=urdadx/librelinks" />
+</a>
+
+## Repo Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/90acd1b69cd45e69fdfe25c16187ea937c3e27c0.svg 'Repobeats analytics image')
+
+## Liscence 📝
+
+MIT
+
+## Give this repo a star ⭐.
